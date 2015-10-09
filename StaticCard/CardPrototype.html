@@ -1,0 +1,112 @@
+<html>
+<head>
+	
+	<title>Static Card</title>
+	<!--<link href="style.css" rel="stylesheet"/>-->
+	
+	<style>
+	
+		body{
+			font-family: Helvetica, Arial, sans-serif;
+			font-weight: 300;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			background-color: #ffffff;
+			font-size: 16px;
+			
+		}
+		
+		h2, h4{
+			font-weight: 300;
+		}
+		p{
+			margin-top: 2rem;
+		}
+		.card{
+			width: 280px;
+			height: 380px;
+			display: block;
+			overflow: hidden;
+		}
+		.cardCTA{
+			
+			
+			
+		}
+		.cardInfo{
+			position: absolute;
+			width: 280px;
+			height: 380px;
+			margin-top: 0px;
+			color: #fff;
+			background-color: #666;
+			padding: 0.5rem 1rem 1rem 1.2rem;
+			
+			-webkit-transition: all 500ms ease-out 0s;
+			-moz-transition: all 500ms ease-out 0s;
+			-o-transition: all 500ms ease-out 0s;
+			transition: all 500ms ease-out 0s;
+			
+		}
+		.banner{
+			
+			
+			
+		}
+	
+	</style>
+
+</head>
+<body>
+	<div class="card">
+		<img src="img/img-1.jpg" class="cardCTA"/>
+		<div class="cardInfo" id="cardInfo" onclick="showInfo()">
+			<div class="banner">
+				<h2>Project Title</h2>
+				<h4>Project Subtitle</h4>
+			</div>
+			<p>
+				Dirk and Bretton went to the park. Stepped on a tail, heard a loud bark. Welcome to the dog park.
+			</p>
+			<h5>List of Things</h5>
+			<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+				<li>four</li>
+				<li>five</li>
+			</ul>
+		</div>
+	</div>
+
+<script>
+
+	var cInfo =  document.getElementById("cardInfo");
+	var infoStatus = false;
+	
+	function showInfo(){
+		
+		if( infoStatus === false ){
+			
+			//show Info
+			cInfo.style.marginTop = "-280px";
+			infoStatus = true;
+		}
+		
+		else
+		if( infoStatus === true ){
+		
+			//hide Info
+			cInfo.style.marginTop = "0px";
+			infoStatus = false;
+		}	
+		
+		
+	}
+	
+
+</script> 
+</body>
+</html>
