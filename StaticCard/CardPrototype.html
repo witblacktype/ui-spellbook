@@ -48,7 +48,6 @@
 	.textCTA{
 	  background-color: #f00;
 	  width: 100%;
-	  display: block:
 	}
 	</style>
 </head>
@@ -104,16 +103,16 @@
 
 <script>
 var infoStatus = false;
-function showInfo(obj){
+function showInfo(cInfo){
   if( infoStatus === false ){
     //show Info
-    obj.style.marginTop = "-280px";
+    cInfo.style.marginTop = "-280px";
     infoStatus = true;
   }
   else
   if( infoStatus === true ){
     //hide Info
-    obj.style.marginTop = "0px";
+    cInfo.style.marginTop = "0px";
     infoStatus = false;
   }
 }
